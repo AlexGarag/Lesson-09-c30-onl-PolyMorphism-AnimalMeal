@@ -1,10 +1,11 @@
 package by.tmc.c30.lesson09polymorphism.animal;
 
-public class Dog extends Animal {
+import by.tmc.c30.lesson09polymorphism.inteface_marker.Carnivorous;
+
+public class Dog extends Animal implements Carnivorous{
 
     public Dog() {
         super.view = "dog";
-        super.isCarnivorous = true;
     }
 
     @Override

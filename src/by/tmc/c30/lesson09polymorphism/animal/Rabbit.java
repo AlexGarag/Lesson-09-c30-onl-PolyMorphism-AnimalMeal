@@ -1,10 +1,11 @@
 package by.tmc.c30.lesson09polymorphism.animal;
 
-public class Rabbit extends Animal {
+import by.tmc.c30.lesson09polymorphism.inteface_marker.Herbivore;
+
+public class Rabbit extends Animal implements Herbivore {
 
     public Rabbit() {
         super.view = "rabbit";
-        super.isCarnivorous = false;
     }
 
     @Override

@@ -11,11 +11,13 @@ public class Executor {
     public static void main(String[] args) {
         Meal great  = new Great();
         Meal meat  = new Meat();
+        Metal metal  = new Metal();
         Animal dog  = new Dog();
         Animal rabbit  = new Rabbit();
-        dog.eat(great);
-        dog.eat(meat);
-        rabbit.eat(great);
-        rabbit.eat(meat);
+        dog.eat(great, dog);
+        dog.eat(meat, dog);
+        rabbit.eat(great, rabbit);
+        rabbit.eat(meat, rabbit);
+        rabbit.eat(metal, rabbit);
     }
 }
